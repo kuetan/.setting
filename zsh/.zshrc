@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/.tool/bin:$PATH
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kue/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -95,16 +95,12 @@ source $ZSH/oh-my-zsh.sh
 alias e="emacs -nw"
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# 履歴ファイルの保存先
 export HISTFILE=${HOME}/.zsh_history
 
-# メモリに保存される履歴の件数
 export HISTSIZE=1000
 
-# 履歴ファイルに保存される履歴の件数
 export SAVEHIST=100000
 
-# 重複を記録しない
 setopt hist_ignore_dups
 
 # 開始と終了を記録

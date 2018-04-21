@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-apt-get install -y git g++ wget emacs zsh gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+apt update
+apt install -y git g++ wget emacs zsh gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 git clone git://github.com/yyuu/pyenv.git $HOME/.pyenv
 $HOME/.setting/link.sh
 source $HOME/.setting/zsh/.zshrc

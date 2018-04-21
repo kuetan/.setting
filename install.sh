@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt-get install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+apt-get install -y git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 git clone git://github.com/yyuu/pyenv.git $HOME/.pyenv
 source $HOME/.setting/zsh/.zshrc
 echo "check_certificate = off" >> /etc/wgetrc

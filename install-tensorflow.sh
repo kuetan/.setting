@@ -14,4 +14,8 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 apt-get update && apt-get install -y bazel
 apt-get upgrade bazel
 
+apt install python3 python3-dev python3-pip
 pip install six numpy wheel
+
+# protobuf
+apt-get install libprotobuf-dev protobuf-compiler

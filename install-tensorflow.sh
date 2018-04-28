@@ -21,13 +21,15 @@ pip install six numpy wheel
 apt-get install libprotobuf-dev protobuf-compiler
 
 # install tensorflow
+version= 1.8.0
+wget https://github.com/tensorflow/tensorflow/archive/v${version}.tar.gz /opt/
 
 echo "build TensorFlow for Python version:", ${python_version}
 
 # =============================================================
 # CONFIGURATION
 # =============================================================
-TF_ROOT=/opt/tensorflow
+TF_ROOT=/opt/tensorflow-${version}
 cd $TF_ROOT
 
 export PYTHON_BIN_PATH=$(which python)

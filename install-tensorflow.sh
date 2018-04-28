@@ -15,16 +15,16 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 apt-get update && apt-get install -y bazel
 apt-get upgrade bazel
 
-apt install python3 python3-dev python3-pip
-pip install six numpy wheel
+apt install -y python3 python3-dev python3-pip
+pip install -y six numpy wheel
 
 # protobuf
-apt-get install libprotobuf-dev protobuf-compiler
+apt install -y libprotobuf-dev protobuf-compiler
 
 # install tensorflow
 VERSION=1.8.0
-wget https://github.com/tensorflow/tensorflow/archive/v${VERSION}.tar.gz /opt/
-
+wget https://github.com/tensorflow/tensorflow/archive/v${VERSION}.tar.gz -P /opt/
+tar zxvf /opt/v${VERSION}.tar.gz
 echo "build TensorFlow for Python version:", ${python_version}
 
 # =============================================================

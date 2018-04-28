@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # install bazel
 #apt-get install pkg-config zip g++ zlib1g-dev unzip
 #wget https://github.com/bazelbuild/bazel/releases/download/0.12.0/bazel-0.12.0-installer-linux-x86_64.sh
@@ -21,15 +22,15 @@ pip install six numpy wheel
 apt-get install libprotobuf-dev protobuf-compiler
 
 # install tensorflow
-version= 1.8.0
-wget https://github.com/tensorflow/tensorflow/archive/v${version}.tar.gz /opt/
+VERSION=1.8.0
+wget https://github.com/tensorflow/tensorflow/archive/v${VERSION}.tar.gz /opt/
 
 echo "build TensorFlow for Python version:", ${python_version}
 
 # =============================================================
 # CONFIGURATION
 # =============================================================
-TF_ROOT=/opt/tensorflow-${version}
+TF_ROOT=/opt/tensorflow-${VERSION}
 cd $TF_ROOT
 
 export PYTHON_BIN_PATH=$(which python)

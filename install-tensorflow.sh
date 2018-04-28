@@ -28,8 +28,8 @@ echo "build TensorFlow for Python version:", ${python_version}
 # CONFIGURATION
 # =============================================================
 TF_ROOT=/opt/tensorflow
-
 cd $TF_ROOT
+
 export PYTHON_BIN_PATH=$(which python)
 export PYTHON_LIB_PATH="$($PYTHON_BIN_PATH -c 'import site; print(site.getsitepackages()[0])')"
 export PYTHONPATH=${TF_ROOT}/lib

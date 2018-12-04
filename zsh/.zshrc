@@ -127,3 +127,4 @@ bindkey '^R' peco-history-selection
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
+export TERM=xterm-256color

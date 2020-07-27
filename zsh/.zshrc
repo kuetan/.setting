@@ -129,3 +129,4 @@ export PATH=$PYENV_ROOT/bin:$HOME/go/bin/:/usr/local/cuda/bin:/snap/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 eval "$(pyenv init -)"
 export TERM=xterm-256color
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

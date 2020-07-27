@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.tool/bin:$PATH
+export PATH=$HOME/bin:$PATH
 # Path to your oh-my-zsh installation.
   export ZSH=$HOME/.oh-my-zsh
 
@@ -125,6 +125,7 @@ zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
 export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
+export PATH=$PYENV_ROOT/bin:$HOME/go/bin/:/usr/local/cuda/bin:/snap/bin/:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 eval "$(pyenv init -)"
 export TERM=xterm-256color
